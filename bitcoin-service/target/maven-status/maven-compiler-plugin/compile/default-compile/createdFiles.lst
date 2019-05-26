@@ -1,6 +1,0 @@
-com/bitcoin/analysis/service/User.class
-com/bitcoin/analysis/service/RestService.class
-com/bitcoin/analysis/service/util/LoggerUtils.class
-com/bitcoin/analysis/service/EchoService.class
-com/bitcoin/analysis/service/UserService.class
-com/bitcoin/analysis/service/impl/InMemoryUserService.class
