@@ -1,0 +1,3 @@
+com/bitcoin/analysis/web/controller/BitcoinController.class
+com/bitcoin/analysis/web/BitcoinTrendApplication.class
+com/bitcoin/analysis/web/controller/SpringRestService.class
