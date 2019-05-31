@@ -17,7 +17,7 @@
 package com.bitcoin.analysis.web.controller;
 
 import com.bitcoin.analysis.service.RestService;
-import com.bitcoin.analysis.service.User;
+import com.bitcoin.analysis.vo.User;
 import org.apache.dubbo.config.annotation.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

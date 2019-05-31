@@ -32,6 +32,8 @@
         <spring-cloud-zookeeper.version>2.1.1.RELEASE</spring-cloud-zookeeper.version>
         <spring-cloud-consul.version>2.1.1.RELEASE</spring-cloud-consul.version>
         <curator.version>4.0.1</curator.version>
+        <mybatis-plus.version>3.1.1</mybatis-plus.version>
+        <druid.version>1.0.29</druid.version>
 
         <!-- Maven Plugin Versions -->
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>

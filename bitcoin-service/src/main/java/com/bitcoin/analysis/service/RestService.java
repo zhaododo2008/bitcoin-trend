@@ -16,6 +16,8 @@
  */
 package com.bitcoin.analysis.service;
 
+import com.bitcoin.analysis.vo.User;
+
 import java.util.Map;
 
 /**

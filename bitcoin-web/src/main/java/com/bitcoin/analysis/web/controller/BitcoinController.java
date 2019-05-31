@@ -1,6 +1,6 @@
 package com.bitcoin.analysis.web.controller;
 
-import com.bitcoin.analysis.service.User;
+import com.bitcoin.analysis.vo.User;
 import com.bitcoin.analysis.service.UserService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

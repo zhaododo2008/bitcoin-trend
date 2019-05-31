@@ -16,7 +16,7 @@
  */
 package com.bitcoin.analysis.service.impl;
 
-import com.bitcoin.analysis.service.User;
+import com.bitcoin.analysis.vo.User;
 import com.bitcoin.analysis.service.UserService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.stereotype.Component;
