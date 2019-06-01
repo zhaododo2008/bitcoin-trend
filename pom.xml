@@ -34,6 +34,8 @@
         <curator.version>4.0.1</curator.version>
         <mybatis-plus.version>3.1.1</mybatis-plus.version>
         <druid.version>1.0.29</druid.version>
+        <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
+        <modelmapper.version>2.3.0</modelmapper.version>
 
         <!-- Maven Plugin Versions -->
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
@@ -63,17 +65,42 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- swagger2 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger-ui.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger-ui.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelmapper.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>com.bitcoin.analysis</groupId>
                 <artifactId>bitcoin-service</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>${version}</version>
                 <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>com.bitcoin.analysis</groupId>
                 <artifactId>bitcoin-info</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>${version}</version>
                 <scope>compile</scope>
             </dependency>
         </dependencies>

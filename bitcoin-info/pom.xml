@@ -13,5 +13,14 @@
     <artifactId>bitcoin-info</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger-ui.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
 
 </project>

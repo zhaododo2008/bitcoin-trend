@@ -1,7 +1,7 @@
-package com.bitcoin.analysis.service;
+package com.bitcoin.analysis.user.service;
 
 
-import com.bitcoin.analysis.po.User;
+import com.bitcoin.analysis.user.po.User;
 
 import java.util.List;
 

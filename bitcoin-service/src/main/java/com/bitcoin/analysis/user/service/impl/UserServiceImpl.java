@@ -1,8 +1,8 @@
-package com.bitcoin.analysis.service.impl;
+package com.bitcoin.analysis.user.service.impl;
 
-import com.bitcoin.analysis.mapper.IUserMapper;
-import com.bitcoin.analysis.po.User;
-import com.bitcoin.analysis.service.IUserService;
+import com.bitcoin.analysis.user.mapper.IUserMapper;
+import com.bitcoin.analysis.user.po.User;
+import com.bitcoin.analysis.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

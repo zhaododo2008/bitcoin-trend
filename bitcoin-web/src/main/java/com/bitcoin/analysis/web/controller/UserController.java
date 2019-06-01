@@ -1,7 +1,7 @@
 package com.bitcoin.analysis.web.controller;
 
-import com.bitcoin.analysis.po.User;
-import com.bitcoin.analysis.service.IUserService;
+import com.bitcoin.analysis.user.po.User;
+import com.bitcoin.analysis.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.bitcoin.analysis.po;
+package com.bitcoin.analysis.user.po;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 
