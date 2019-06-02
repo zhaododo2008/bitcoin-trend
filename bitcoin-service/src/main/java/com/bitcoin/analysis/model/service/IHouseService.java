@@ -7,7 +7,7 @@ import com.bitcoin.analysis.model.po.House;
 import com.bitcoin.analysis.model.vo.req.HouseQueryReq;
 
 /**
- * @author zhaododd
+ * @author zhaododo
  **/
 
 public interface IHouseService extends IService<House> {

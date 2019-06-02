@@ -1,6 +1,6 @@
 package com.bitcoin.analysis.model.po;
 
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,6 +14,7 @@ public class House implements Serializable {
     /**
      * 主键id
      */
+    @TableId(value = "id",type = IdType.AUTO)
     private Long id;
 
     /**

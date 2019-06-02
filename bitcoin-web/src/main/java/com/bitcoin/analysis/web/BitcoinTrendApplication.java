@@ -7,6 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -15,6 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.bitcoin.analysis","com.bitcoin.analysis.web.config"})
+@EnableTransactionManagement
 @MapperScan("com.bitcoin.analysis.**.mapper")
 @EnableSwagger2
 public class BitcoinTrendApplication {
@@ -23,7 +25,6 @@ public class BitcoinTrendApplication {
     public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
     }
-
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(BitcoinTrendApplication.class)
