@@ -31,7 +31,7 @@ public class ResourceController {
     private IResourceService resourceService;
 
     @PostMapping("/queryByPage")
-    @ApiOperation(value="分页查询资源")
+    @ApiOperation(value="资源分页查询")
     public RespResult queryByPage(@RequestBody ResourceQueryReq queryReq) {
         logger.info("resource query param is {}", JSON.toJSON(queryReq));
         return RespUtil.success(resourceService.queryByPage(queryReq));
