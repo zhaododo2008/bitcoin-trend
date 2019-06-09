@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 
 @RestController
-@RequestMapping("/resource")
+@RequestMapping("/api/resource")
 @Api(tags = "资源模块Api")
 public class ResourceController {
 
