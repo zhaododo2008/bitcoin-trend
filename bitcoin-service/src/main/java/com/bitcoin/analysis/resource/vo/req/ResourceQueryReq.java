@@ -1,6 +1,7 @@
 package com.bitcoin.analysis.resource.vo.req;
 
 import com.bitcoin.analysis.req.PageModel;
+import io.swagger.annotations.ApiModel;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -8,6 +9,7 @@ import java.util.Date;
 /**
  * @author zhaododo
  */
+@ApiModel(description = "资源分页查询")
 public class ResourceQueryReq extends PageModel implements Serializable{
     private static final long serialVersionUID = 8751282105532159742L;
 
@@ -15,11 +17,6 @@ public class ResourceQueryReq extends PageModel implements Serializable{
      * 简述
      */
     private String resume;
-
-    /**
-     * 发布时间
-     */
-    private Date postTime;
 
     /**
      * 分类 0: 默认值 1: java,2: python
@@ -37,14 +34,6 @@ public class ResourceQueryReq extends PageModel implements Serializable{
 
     public void setResume(String resume) {
         this.resume = resume;
-    }
-
-    public Date getPostTime() {
-        return postTime;
-    }
-
-    public void setPostTime(Date postTime) {
-        this.postTime = postTime;
     }
 
     public Integer getType() {
