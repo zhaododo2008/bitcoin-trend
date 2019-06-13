@@ -36,6 +36,8 @@
         <druid.version>1.0.29</druid.version>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
         <modelmapper.version>2.3.0</modelmapper.version>
+        <weixin-java-miniapp.version>3.4.0</weixin-java-miniapp.version>
+
 
         <!-- Maven Plugin Versions -->
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>

@@ -53,3 +53,12 @@ management:
         include: dubborestmetadata
 logging:
   config: classpath:log/logback-dev.xml
+
+wx:
+  miniapp:
+    configs:
+      - appid: wxd33f4755b635f0d2
+        secret: 82308ed8e370aa8ca6d92be5f9d219eb
+        token: 123456
+        aesKey: 123456
+        msgDataFormat: JSON

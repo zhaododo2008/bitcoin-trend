@@ -6,6 +6,9 @@ import com.bitcoin.analysis.resource.po.Resource;
 import com.bitcoin.analysis.resource.service.IResourceService;
 import com.bitcoin.analysis.resource.vo.req.ResourceQueryReq;
 import com.bitcoin.analysis.test.BaseApplicationTests;
+import com.bitcoin.analysis.user.facade.IUserFacade;
+import com.bitcoin.analysis.user.vo.req.SnsUserSaveReq;
+import com.bitcoin.analysis.user.vo.resp.SnsUserResp;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +26,9 @@ public class ResouceServiceTest extends BaseApplicationTests {
     @Autowired
     private IResourceService resourceService;
 
+    @Autowired
+    private IUserFacade userFacade;
+
 
     @Test
     public void queryByPage(){
@@ -31,6 +37,17 @@ public class ResouceServiceTest extends BaseApplicationTests {
         queryReq.setPageSize(10);
         IPage<Resource> page =  resourceService.queryByPage(queryReq);
         logger.info("queryByPage {}", JSON.toJSON(page));
+    }
+
+
+    @Test
+    public void addWxUser(){
+
+        SnsUserSaveReq snsUserSaveReq = new SnsUserSaveReq();
+        snsUserSaveReq.setOpenId("ogB2A4r1h4Wbg9IlYo8RiMisxib8");
+        snsUserSaveReq.setSessionKey("lRNlHTNPwPlinEe7WFeWSQ");
+        SnsUserResp userResp = userFacade.addWxUser(snsUserSaveReq);
+        logger.info("addWxUser result is  {}", JSON.toJSON(userResp));
     }
 
 
